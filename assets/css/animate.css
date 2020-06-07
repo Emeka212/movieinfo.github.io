@@ -1,0 +1,108 @@
+
+.first-animate{
+	background-color: transparent;
+	position: relative;
+	width: 80%;
+	margin-top: -25px;
+	margin-bottom: 30px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 20px;
+	animation: animate 2s;
+	border-bottom: 3px solid orangered;
+	/*transform: translate3d(0, 0, 400px) rotateY(-40deg);*/
+	/*transform-style: preserve-3d;
+                transform: perspective(800px);*/
+}
+@keyframes animate{
+	40%{
+     right: 7%;
+	}
+	80%{
+	 right: 0%;
+	}
+	17%{
+		right: 100%;
+	}
+	30%{
+		right: 0%;
+	}
+}
+
+
+
+
+
+
+<!-- about/bio -->
+<div class="nxt1">
+	<img src="assets/images/videoback.png">
+
+	
+    <div class="sub1 animate__animated animate__bounce">ABOUT ME !</div>
+    <div class="txt1 animate__animated animate__bounceInRight">
+        <small>
+        HI Dear, My Name Is "EMEKA MICHAEL STEPHEN", I Like It When People Or Friends Call Me "M.K" Or "MC STEPHEN" For Short.
+         I'm A UI Front-End Developer And I Have 1+ Years Of Expirence, I Like Creating "Crative, Magnificient, 2nd To None & Lot Of Amazing" PORFIOLO.
+        Check Out My Online Resume And Project.
+         I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I write about web development on my blog and regularly speak at various web conferences and meetups. Want to know how I may help your project? Check out my project case studies and resume 
+        </small>
+    </div>
+    <div class="button">
+    	 <button>Hire Me</button>
+    </div>
+    <div class="img animate__animated animate__bounceInLeft"><img src="assets/images/yes.jpg" width="100%" height="100%"></div>
+
+</div>
+<!-- end of about/bio -->
+
+
+<!-- for my skills -->
+<section class="section2">
+    <div class="Skills">
+    <div class="h1">
+    <h1><span>My Skills</span></h1>
+    </div>
+    <li>
+        <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+    </li>
+    
+    <li>
+        <h3>CSS3</h3><span class="bar"><span class="CSS3"></span></span>
+    </li>
+
+    <li>
+        <h3>JS</h3><span class="bar"><span class="JS"></span></span>
+    </li>
+
+    <li>
+        <h3>PHP</h3><span class="bar"><span class="PHP"></span></span>
+    </li>
+</div>
+</section>
+<!-- end of my skills -->
+
+<!-- for online project -->
+<section class="section3">
+    <div align="center" class="h3">Project & Resume ?</div>
+    <div align="center" class="h3-sub">
+        This are some of my finished and unfinished PROJECT down below.
+    </div>
+     <div align="center" style="font-family: Arial;font-size: 30px;text-decoration: underline;color: gold;"><b>Finish Project</b></div>
+    <div class="project1">
+        <SPAN><img src="assets/images/superbox-full-24.jpg" width="400" height="200"></SPAN>
+        <div class="talk"><b style="font-size: 25px;text-decoration: none;font-family: 'Bad Script' , cursive;">My 1st Portfiolo VOL1 :</b> <br />
+        This is the first portfiolo i created after 3 to 4 month of learning programming. It was a little bit tough for me :) but YES! i still did it. <br />
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>JS</button>
+        <br />
+        <span>Link :<a href="#"> Https://emeka212.github.io</a></span>
+        </div>
+    </div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<!-- end of online project -->

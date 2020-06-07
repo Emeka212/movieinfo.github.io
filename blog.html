@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Blog</title>
+
+<!-- Google Ads -->
+<script data-ad-client="ca-pub-3864057106280422" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="MC Stephen" content="Responsive UI Website">
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!-- FontAwesome JS-->
+    <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
+	
+	<!-- css style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/plugins/sweetalert.js"></script>
+    <link rel="stylesheet" href="assets/css/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/skill.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animatehover.css" /> 
+	<link rel="stylesheet" href="assets/plugins/animate.min.css" />
+
+</head>
+
+<body>
+
+<!-- for the header -->
+<div class="header">
+   <div class="logo animate__animated animate__bounce">
+   	MC Stephen "M.K"
+   </div>
+   <div class="list" id="list">
+	<a href="index.html"><li>HOME</li></a>
+	<a href="project.html"><li>PROJECT</li></a>
+	<a href="blog.html"><li class="active">BLOG</li></a>
+	<a href="contact.html"><li>RESUME</li></a>
+	<a href="about.html"><li>ABOUT</li></a>
+	<a href="#contact" class="contact"><li>CONTACT US</li></a>
+   </div>
+   <div class="slide-open" id="open" onclick="slide_open()">|||</div>
+   <div class="slide-close" id="close" onclick="slide_close()">|||</div>
+</div>
+<!-- end of header -->
+
+
+var unirest = require("unirest");
+
+var req = unirest("GET", "https://movie-database-imdb-alternative.p.rapidapi.com/");
+
+req.query({
+	"page": "1",
+	"r": "json",
+	"s": "Avengers Endgame"
+});
+
+req.headers({
+	"x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+	"x-rapidapi-key": "68722e0b8emsh47bfa042df321afp16dd1fjsn947fe79ddab4",
+	"useQueryString": true
+});
+
+
+req.end(function (res) {
+	if (res.error) throw new Error(res.error);
+
+	console.log(res.body);
+});
+
+
+</body>
+</html>

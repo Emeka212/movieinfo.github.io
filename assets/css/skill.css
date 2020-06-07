@@ -1,0 +1,99 @@
+        .Skills{
+        	width: 100%;
+        	margin: 60px auto;
+        	color: #fff;
+        }
+        .section2 .h1{
+            background: ;
+            width: 140px;
+            transition: 2s;
+        }
+        .section2 .h1:hover{
+            transform: rotateY(500deg) rotateX(500deg);
+            width: 140px;
+        }
+        .Skills h1 span{
+        	cursor: pointer;
+        	transition: 1s;
+        	width: 200px;
+        	text-overflow: none;
+            text-shadow: 0 0 10px #00b3ff,
+                             0 0 20px #00b3ff,
+                             0 0 40px #00b3ff,
+                             0 0 80px #00b3ff,
+                             0 0 120px #00b3ff,
+                             0 0 200px #00b3ff,
+                             0 0 300px #00b3ff,
+                             0 0 400px #00b3ff;
+        }
+        
+        .Skills li{
+        	margin: 20px 0;
+        }
+        .bar{
+        	background-color: #353b48;
+        	display: block;
+        	height: 2px;
+        	border: 1px solid rgba(0,0,0,0.3);
+        	border-radius: 3px;
+        	overflow: hidden;
+        	box-shadow: 0 0 10px #2187e7b3;
+        }
+        .bar span{
+        	height: 2px;
+        	float: left;
+        	background-color: #2187e7;
+        }
+        .html{
+        	width: 90%;
+        	animation: html 2s;
+        }
+        .CSS3{
+        	width: 80%;
+        	animation: css 2s;
+        }
+        .JS{
+        	width: 50%;
+        	animation: js 2s;
+        }
+        .PHP{
+        	width: 70%;
+        	animation: php 2s;
+        }
+        @keyframes html{
+            0%{
+            	width: 0%;
+            }
+            100%{
+            	width: 90%;
+            }
+        }
+        @keyframes css{
+            0%{
+            	width: 0%;
+            }
+            100%{
+            	width: 80%;
+            }
+        }
+        @keyframes js{
+            0%{
+            	width: 0%;
+            }
+            100%{
+            	width: 50%;
+            }
+        }
+        @keyframes php{
+            0%{
+            	width: 0%;
+            }
+            100%{
+            	width: 70%;
+            }
+        }
+
+
+
+
+
